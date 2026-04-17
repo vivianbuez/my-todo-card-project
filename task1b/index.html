@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  
+        
+    
+
+    <div>
+
+      <!-- HEADER -->
+      <header class="profile-header">
+
+        <figure class="avatar-wrapper">
+          <img
+            src="my avatar.PNG"
+            alt="User profile avatar"
+            data-testid="test-user-avatar"
+            class="avatar"
+          />
+        </figure>
+
+        <div class="user-info">
+          <h2 data-testid="test-user-name">Vivian Chibueze</h2>
+
+          <p class="bio" data-testid="test-user-bio">
+            Frontend developer focused on building accessible, responsive, and well-structured user interfaces.
+          </p>
+
+          <p class="time" aria-live="polite">
+            Current Time: <span data-testid="test-user-time" id="time"></span>
+          </p>
+        </div>
+      </header>
+
+      <!-- SOCIAL LINKS -->
+      <nav class="socials" data-testid="test-user-social-links">
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+           data-testid="test-user-social-twitter">Twitter</a>
+
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+           data-testid="test-user-social-github">GitHub</a>
+
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+           data-testid="test-user-social-linkedin">LinkedIn</a>
+      </nav>
+
+      <!-- HOBBIES -->
+      <section>
+        <h3>Hobbies</h3>
+        <hr>
+        <ul data-testid="test-user-hobbies">
+          <li>Music</li>
+          <li>Reading</li>
+          <li>Designing UI</li>
+        </ul>
+      </section>
+
+      <!-- DISLIKES -->
+      <section>
+        <h3>Dislikes</h3>
+        <hr>
+        <ul data-testid="test-user-dislikes">
+          <li>Messy code</li>
+          <li>Unresponsive UI</li>
+          <li>Slow websites</li>
+        </ul>
+      </section>
+
+    </article>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
