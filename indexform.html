@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task - Advanced Todo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <header class="form-header">
+            <h2>Edit Task</h2>
+            <p>Update your task details below</p>
+        </header>
+
+        <form id="todo-form">
+            <div class="form-group">
+                <label for="task-title">Task Title</label>
+                <input type="text" id="task-title" placeholder="e.g., Buy groceries" required>
+            </div>
+
+            <div class="form-group">
+                <label for="task-desc">Description</label>
+                <textarea id="task-desc" placeholder="Add more details..."></textarea>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="task-priority">Priority</label>
+                    <select id="task-priority">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="task-date">Due Date</label>
+                    <input type="datetime-local" id="task-date">
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn btn-save">Save Changes</button>
+                <button type="button" class="btn btn-cancel" onclick="window.history.back()">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
