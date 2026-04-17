@@ -6,13 +6,11 @@ body {
 }
 
 .todo-card {
-  list-style: none;
-  
-  background: rgb(205, 214, 248);
-  max-width: 550px;
+ background: rgb(205, 214, 248);
+  max-width: 450px;
   width: 100%;
-  padding: 22px;
-  border-radius: 18px;
+  padding: 20px;
+  border-radius: 16px;
 }
 
 .priority.low { background: #e2e8f0; }
