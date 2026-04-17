@@ -1,0 +1,61 @@
+body {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.todo-card {
+  list-style: none;
+  
+  background: rgb(205, 214, 248);
+  max-width: 550px;
+  width: 100%;
+  padding: 22px;
+  border-radius: 18px;
+}
+
+.priority.low { background: #e2e8f0; }
+.priority.medium { background: #fde68a; }
+.priority.high { background: #fca5a5; }
+
+.completed h2 {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.overdue {
+  border: 2px solid red;
+}
+
+.in-progress {
+  border-left: 5px solid orange;
+}
+
+.description {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.collapsed {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
